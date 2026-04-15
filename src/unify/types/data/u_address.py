@@ -2,8 +2,6 @@
 
 from typing import Optional
 
-from pydantic import Field as FieldInfo
-
 from ..._models import BaseModel
 from .u_country import UCountry
 
@@ -13,28 +11,28 @@ __all__ = ["UAddress"]
 class UAddress(BaseModel):
     """Composite object representing a physical address."""
 
-    administrative_area: Optional[str] = FieldInfo(alias="administrativeArea", default=None)
+    administrative_area: Optional[str] = None
     """State, province, region, or territory."""
 
     country: Optional[UCountry] = None
     """Composite object representing a country."""
 
-    dependent_locality: Optional[str] = FieldInfo(alias="dependentLocality", default=None)
+    dependent_locality: Optional[str] = None
     """Neighborhood, borough, district, or city sector."""
 
     locality: Optional[str] = None
     """City, town, or village."""
 
-    postal_code: Optional[str] = FieldInfo(alias="postalCode", default=None)
+    postal_code: Optional[str] = None
     """Postal code or ZIP code."""
 
     premise: Optional[str] = None
     """Street number or building name."""
 
-    sub_administrative_area: Optional[str] = FieldInfo(alias="subAdministrativeArea", default=None)
+    sub_administrative_area: Optional[str] = None
     """County or other secondary governmental division of an administrative area."""
 
-    sub_premise: Optional[str] = FieldInfo(alias="subPremise", default=None)
+    sub_premise: Optional[str] = None
     """Apartment, suite, office number, or other secondary unit designator."""
 
     thoroughfare: Optional[str] = None

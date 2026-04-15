@@ -2,9 +2,8 @@
 
 from __future__ import annotations
 
-from typing_extensions import Annotated, TypedDict
+from typing_extensions import TypedDict
 
-from ..._utils import PropertyInfo
 from .u_country_param import UCountryParam
 
 __all__ = ["UAddressParam"]
@@ -13,28 +12,28 @@ __all__ = ["UAddressParam"]
 class UAddressParam(TypedDict, total=False):
     """Composite object representing a physical address."""
 
-    administrative_area: Annotated[str, PropertyInfo(alias="administrativeArea")]
+    administrative_area: str
     """State, province, region, or territory."""
 
     country: UCountryParam
     """Composite object representing a country."""
 
-    dependent_locality: Annotated[str, PropertyInfo(alias="dependentLocality")]
+    dependent_locality: str
     """Neighborhood, borough, district, or city sector."""
 
     locality: str
     """City, town, or village."""
 
-    postal_code: Annotated[str, PropertyInfo(alias="postalCode")]
+    postal_code: str
     """Postal code or ZIP code."""
 
     premise: str
     """Street number or building name."""
 
-    sub_administrative_area: Annotated[str, PropertyInfo(alias="subAdministrativeArea")]
+    sub_administrative_area: str
     """County or other secondary governmental division of an administrative area."""
 
-    sub_premise: Annotated[str, PropertyInfo(alias="subPremise")]
+    sub_premise: str
     """Apartment, suite, office number, or other secondary unit designator."""
 
     thoroughfare: str

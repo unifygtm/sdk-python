@@ -40,17 +40,17 @@ class TestRecords:
             object_name="object_name",
             data={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
@@ -165,17 +165,17 @@ class TestRecords:
             object_name="object_name",
             data={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
@@ -344,98 +344,98 @@ class TestRecords:
             object_name="object_name",
             match={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             validation_mode="strict",
             create={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             create_or_update={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             create_or_update_if_empty={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             update={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             update_if_empty={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
@@ -501,17 +501,17 @@ class TestAsyncRecords:
             object_name="object_name",
             data={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
@@ -626,17 +626,17 @@ class TestAsyncRecords:
             object_name="object_name",
             data={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
@@ -805,98 +805,98 @@ class TestAsyncRecords:
             object_name="object_name",
             match={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             validation_mode="strict",
             create={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             create_or_update={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             create_or_update_if_empty={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             update={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
             update_if_empty={
                 "foo": {
-                    "administrative_area": "administrativeArea",
+                    "administrative_area": "administrative_area",
                     "country": {
                         "code": "AD",
                         "name": "name",
                     },
-                    "dependent_locality": "dependentLocality",
+                    "dependent_locality": "dependent_locality",
                     "locality": "locality",
-                    "postal_code": "postalCode",
+                    "postal_code": "postal_code",
                     "premise": "premise",
-                    "sub_administrative_area": "subAdministrativeArea",
-                    "sub_premise": "subPremise",
+                    "sub_administrative_area": "sub_administrative_area",
+                    "sub_premise": "sub_premise",
                     "thoroughfare": "thoroughfare",
                 }
             },
