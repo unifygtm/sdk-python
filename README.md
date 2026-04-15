@@ -1,7 +1,7 @@
 # Unify Python API library
 
 <!-- prettier-ignore -->
-[![PyPI version](https://img.shields.io/pypi/v/unify.svg?label=pypi%20(stable))](https://pypi.org/project/unify/)
+[![PyPI version](https://img.shields.io/pypi/v/unifygtm-sdk.svg?label=pypi%20(stable))](https://pypi.org/project/unifygtm-sdk/)
 
 The Unify Python library provides convenient access to the Unify REST API from any Python 3.9+
 application. The library includes type definitions for all request params and response fields,
@@ -21,7 +21,7 @@ pip install git+ssh://git@github.com/stainless-sdks/unify-python.git
 ```
 
 > [!NOTE]
-> Once this package is [published to PyPI](https://www.stainless.com/docs/guides/publish), this will become: `pip install unify`
+> Once this package is [published to PyPI](https://www.stainless.com/docs/guides/publish), this will become: `pip install unifygtm-sdk`
 
 ## Usage
 
@@ -76,7 +76,7 @@ You can enable this by installing `aiohttp`:
 
 ```sh
 # install from this staging repo
-pip install 'unify[aiohttp] @ git+ssh://git@github.com/stainless-sdks/unify-python.git'
+pip install 'unifygtm-sdk[aiohttp] @ git+ssh://git@github.com/stainless-sdks/unify-python.git'
 ```
 
 Then you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:
