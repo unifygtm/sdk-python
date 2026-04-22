@@ -1,4 +1,4 @@
 configured_endpoints: 21
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/unify%2Funify-3bc5202f7ff01d8fedb9a011a2ededd5894f8000238cbc6c1a35a4c29298eb33.yml
-openapi_spec_hash: e26bc9deba26de1eefa2ce4a421043f6
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/unify%2Funify-17c3b84a98900702272afd48aea1815a914796c8b8d2ff9ac958f58b61397add.yml
+openapi_spec_hash: 669c33d5b065c8cd22fc2c166214cbdc
 config_hash: f882234204d29df1d5df8a78dadff746
