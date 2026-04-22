@@ -7,7 +7,9 @@ from .u_date import UDate as UDate
 from .u_text import UText as UText
 from .u_uuid import UUuid as UUuid
 from .u_email import UEmail as UEmail
+from .u_value import UValue as UValue
 from .u_object import UObject as UObject
+from .u_record import URecord as URecord
 from .u_select import USelect as USelect
 from .u_address import UAddress as UAddress
 from .u_boolean import UBoolean as UBoolean
@@ -18,6 +20,7 @@ from .u_currency import UCurrency as UCurrency
 from .u_datetime import UDatetime as UDatetime
 from .u_attribute import UAttribute as UAttribute
 from .u_multiselect import UMultiselect as UMultiselect
+from .u_value_param import UValueParam as UValueParam
 from .u_phone_number import UPhoneNumber as UPhoneNumber
 from .u_address_param import UAddressParam as UAddressParam
 from .u_country_param import UCountryParam as UCountryParam
@@ -26,6 +29,7 @@ from .u_currency_param import UCurrencyParam as UCurrencyParam
 from .u_attribute_param import UAttributeParam as UAttributeParam
 from .u_reference_by_id import UReferenceByID as UReferenceByID
 from .u_multiselect_param import UMultiselectParam as UMultiselectParam
+from .u_record_attributes import URecordAttributes as URecordAttributes
 from .object_create_params import ObjectCreateParams as ObjectCreateParams
 from .object_list_response import ObjectListResponse as ObjectListResponse
 from .object_update_params import ObjectUpdateParams as ObjectUpdateParams
@@ -52,6 +56,7 @@ from .attribute_create_response import AttributeCreateResponse as AttributeCreat
 from .attribute_delete_response import AttributeDeleteResponse as AttributeDeleteResponse
 from .attribute_update_response import AttributeUpdateResponse as AttributeUpdateResponse
 from .record_find_unique_params import RecordFindUniqueParams as RecordFindUniqueParams
+from .u_record_attributes_param import URecordAttributesParam as URecordAttributesParam
 from .u_reference_by_match_param import UReferenceByMatchParam as UReferenceByMatchParam
 from .attribute_retrieve_response import AttributeRetrieveResponse as AttributeRetrieveResponse
 from .record_find_unique_response import RecordFindUniqueResponse as RecordFindUniqueResponse
