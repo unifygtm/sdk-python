@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 import httpx
 
 from ..._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
@@ -30,6 +28,7 @@ from ...types.data.record_delete_response import RecordDeleteResponse
 from ...types.data.record_update_response import RecordUpdateResponse
 from ...types.data.record_upsert_response import RecordUpsertResponse
 from ...types.data.record_retrieve_response import RecordRetrieveResponse
+from ...types.data.u_record_attributes_param import URecordAttributesParam
 from ...types.data.record_find_unique_response import RecordFindUniqueResponse
 
 __all__ = ["RecordsResource", "AsyncRecordsResource"]
@@ -59,7 +58,7 @@ class RecordsResource(SyncAPIResource):
         self,
         object_name: str,
         *,
-        data: Dict[str, record_create_params.Data],
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -70,9 +69,7 @@ class RecordsResource(SyncAPIResource):
     ) -> RecordCreateResponse:
         """
         Args:
-          data: The attribute values for the new record.
-
-              All required attributes on the object must be included.
+          data: Attribute key-value pairs associated with an object record.
 
           validation_mode: Validation mode to use when validating request data.
 
@@ -148,7 +145,7 @@ class RecordsResource(SyncAPIResource):
         record_id: str,
         *,
         object_name: str,
-        data: Dict[str, record_update_params.Data],
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -159,7 +156,7 @@ class RecordsResource(SyncAPIResource):
     ) -> RecordUpdateResponse:
         """
         Args:
-          data: The attribute values to update in the record.
+          data: Attribute key-value pairs associated with an object record.
 
           validation_mode: Validation mode to use when validating request data.
 
@@ -238,7 +235,7 @@ class RecordsResource(SyncAPIResource):
         self,
         object_name: str,
         *,
-        match: Dict[str, Optional[record_find_unique_params.Match]],
+        match: URecordAttributesParam,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -248,11 +245,7 @@ class RecordsResource(SyncAPIResource):
     ) -> RecordFindUniqueResponse:
         """
         Args:
-          match: The attribute values to match against to find an existing record.
-
-              At least one unique attribute must be included to ensure that at most one record
-              is matched. Additional unique or non-unique attributes may also be included to
-              refine the matching criteria.
+          match: Attribute key-value pairs associated with an object record.
 
           extra_headers: Send extra headers
 
@@ -277,13 +270,13 @@ class RecordsResource(SyncAPIResource):
         self,
         object_name: str,
         *,
-        match: Dict[str, Optional[record_upsert_params.Match]],
+        match: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
-        create: Dict[str, record_upsert_params.Create] | Omit = omit,
-        create_or_update: Dict[str, record_upsert_params.CreateOrUpdate] | Omit = omit,
-        create_or_update_if_empty: Dict[str, record_upsert_params.CreateOrUpdateIfEmpty] | Omit = omit,
-        update: Dict[str, record_upsert_params.Update] | Omit = omit,
-        update_if_empty: Dict[str, record_upsert_params.UpdateIfEmpty] | Omit = omit,
+        create: URecordAttributesParam | Omit = omit,
+        create_or_update: URecordAttributesParam | Omit = omit,
+        create_or_update_if_empty: URecordAttributesParam | Omit = omit,
+        update: URecordAttributesParam | Omit = omit,
+        update_if_empty: URecordAttributesParam | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -293,11 +286,7 @@ class RecordsResource(SyncAPIResource):
     ) -> RecordUpsertResponse:
         """
         Args:
-          match: The attribute values to match against to find an existing record.
-
-              At least one unique attribute must be included to ensure that at most one record
-              is matched. Additional unique or non-unique attributes may also be included to
-              refine the matching criteria.
+          match: Attribute key-value pairs associated with an object record.
 
           validation_mode: Validation mode to use when validating request data.
 
@@ -309,18 +298,15 @@ class RecordsResource(SyncAPIResource):
               will still fail if the request body does not contain the proper structure or if
               any required attributes fail validation.
 
-          create: The attribute values to use when creating a new record if no match is found.
+          create: Attribute key-value pairs associated with an object record.
 
-          create_or_update: The attribute values to apply during both creation and update operations.
+          create_or_update: Attribute key-value pairs associated with an object record.
 
-          create_or_update_if_empty: The attribute values to apply during both creation and update-if-empty
-              operations.
+          create_or_update_if_empty: Attribute key-value pairs associated with an object record.
 
-          update: The attribute values to use when updating an existing record if a match is
-              found.
+          update: Attribute key-value pairs associated with an object record.
 
-          update_if_empty: The attribute values to update when a matching record is found and the existing
-              attribute value on the record is `null`.
+          update_if_empty: Attribute key-value pairs associated with an object record.
 
           extra_headers: Send extra headers
 
@@ -380,7 +366,7 @@ class AsyncRecordsResource(AsyncAPIResource):
         self,
         object_name: str,
         *,
-        data: Dict[str, record_create_params.Data],
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -391,9 +377,7 @@ class AsyncRecordsResource(AsyncAPIResource):
     ) -> RecordCreateResponse:
         """
         Args:
-          data: The attribute values for the new record.
-
-              All required attributes on the object must be included.
+          data: Attribute key-value pairs associated with an object record.
 
           validation_mode: Validation mode to use when validating request data.
 
@@ -471,7 +455,7 @@ class AsyncRecordsResource(AsyncAPIResource):
         record_id: str,
         *,
         object_name: str,
-        data: Dict[str, record_update_params.Data],
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -482,7 +466,7 @@ class AsyncRecordsResource(AsyncAPIResource):
     ) -> RecordUpdateResponse:
         """
         Args:
-          data: The attribute values to update in the record.
+          data: Attribute key-value pairs associated with an object record.
 
           validation_mode: Validation mode to use when validating request data.
 
@@ -563,7 +547,7 @@ class AsyncRecordsResource(AsyncAPIResource):
         self,
         object_name: str,
         *,
-        match: Dict[str, Optional[record_find_unique_params.Match]],
+        match: URecordAttributesParam,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -573,11 +557,7 @@ class AsyncRecordsResource(AsyncAPIResource):
     ) -> RecordFindUniqueResponse:
         """
         Args:
-          match: The attribute values to match against to find an existing record.
-
-              At least one unique attribute must be included to ensure that at most one record
-              is matched. Additional unique or non-unique attributes may also be included to
-              refine the matching criteria.
+          match: Attribute key-value pairs associated with an object record.
 
           extra_headers: Send extra headers
 
@@ -602,13 +582,13 @@ class AsyncRecordsResource(AsyncAPIResource):
         self,
         object_name: str,
         *,
-        match: Dict[str, Optional[record_upsert_params.Match]],
+        match: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
-        create: Dict[str, record_upsert_params.Create] | Omit = omit,
-        create_or_update: Dict[str, record_upsert_params.CreateOrUpdate] | Omit = omit,
-        create_or_update_if_empty: Dict[str, record_upsert_params.CreateOrUpdateIfEmpty] | Omit = omit,
-        update: Dict[str, record_upsert_params.Update] | Omit = omit,
-        update_if_empty: Dict[str, record_upsert_params.UpdateIfEmpty] | Omit = omit,
+        create: URecordAttributesParam | Omit = omit,
+        create_or_update: URecordAttributesParam | Omit = omit,
+        create_or_update_if_empty: URecordAttributesParam | Omit = omit,
+        update: URecordAttributesParam | Omit = omit,
+        update_if_empty: URecordAttributesParam | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -618,11 +598,7 @@ class AsyncRecordsResource(AsyncAPIResource):
     ) -> RecordUpsertResponse:
         """
         Args:
-          match: The attribute values to match against to find an existing record.
-
-              At least one unique attribute must be included to ensure that at most one record
-              is matched. Additional unique or non-unique attributes may also be included to
-              refine the matching criteria.
+          match: Attribute key-value pairs associated with an object record.
 
           validation_mode: Validation mode to use when validating request data.
 
@@ -634,18 +610,15 @@ class AsyncRecordsResource(AsyncAPIResource):
               will still fail if the request body does not contain the proper structure or if
               any required attributes fail validation.
 
-          create: The attribute values to use when creating a new record if no match is found.
+          create: Attribute key-value pairs associated with an object record.
 
-          create_or_update: The attribute values to apply during both creation and update operations.
+          create_or_update: Attribute key-value pairs associated with an object record.
 
-          create_or_update_if_empty: The attribute values to apply during both creation and update-if-empty
-              operations.
+          create_or_update_if_empty: Attribute key-value pairs associated with an object record.
 
-          update: The attribute values to use when updating an existing record if a match is
-              found.
+          update: Attribute key-value pairs associated with an object record.
 
-          update_if_empty: The attribute values to update when a matching record is found and the existing
-              attribute value on the record is `null`.
+          update_if_empty: Attribute key-value pairs associated with an object record.
 
           extra_headers: Send extra headers
 
