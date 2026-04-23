@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["UUuid"]
+__all__ = ["Decimal"]
 
-UUuid: TypeAlias = str
+Decimal: TypeAlias = float

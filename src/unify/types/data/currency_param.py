@@ -4,10 +4,10 @@ from __future__ import annotations
 
 from typing_extensions import Literal, Required, TypedDict
 
-__all__ = ["UCurrencyParam"]
+__all__ = ["CurrencyParam"]
 
 
-class UCurrencyParam(TypedDict, total=False):
+class CurrencyParam(TypedDict, total=False):
     """Composite object representing a currency value."""
 
     code: Required[
