@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["PhoneNumber"]
+__all__ = ["UInteger"]
 
-PhoneNumber: TypeAlias = str
+UInteger: TypeAlias = int

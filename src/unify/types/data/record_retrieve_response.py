@@ -2,7 +2,7 @@
 
 from typing_extensions import Literal
 
-from .record import Record
+from .u_record import URecord
 from ..._models import BaseModel
 
 __all__ = ["RecordRetrieveResponse"]
@@ -11,7 +11,7 @@ __all__ = ["RecordRetrieveResponse"]
 class RecordRetrieveResponse(BaseModel):
     """Response for a successful get operation."""
 
-    data: Record
+    data: URecord
     """Object record with its associated metadata and attribute key-value pairs."""
 
     status: Literal["success"]

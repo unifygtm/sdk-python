@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["Email"]
+__all__ = ["UEmail"]
 
-Email: TypeAlias = str
+UEmail: TypeAlias = str

@@ -1,7 +1,8 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
+from typing import List
 from typing_extensions import TypeAlias
 
-__all__ = ["Date"]
+__all__ = ["UMultiselect"]
 
-Date: TypeAlias = str
+UMultiselect: TypeAlias = List[str]

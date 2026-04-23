@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["Integer"]
+__all__ = ["UDecimal"]
 
-Integer: TypeAlias = int
+UDecimal: TypeAlias = float
