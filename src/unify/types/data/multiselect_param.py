@@ -5,8 +5,8 @@ from __future__ import annotations
 from typing import List
 from typing_extensions import TypeAlias
 
-__all__ = ["UMultiselectParam", "UMultiselectParamItem"]
+__all__ = ["MultiselectParam", "MultiselectParamItem"]
 
-UMultiselectParamItem: TypeAlias = str
+MultiselectParamItem: TypeAlias = str
 
-UMultiselectParam: TypeAlias = List[str]
+MultiselectParam: TypeAlias = List[str]

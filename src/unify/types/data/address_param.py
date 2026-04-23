@@ -1,39 +1,40 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Optional
+from __future__ import annotations
 
-from ..._models import BaseModel
-from .u_country import UCountry
+from typing_extensions import TypedDict
 
-__all__ = ["UAddress"]
+from .country_param import CountryParam
+
+__all__ = ["AddressParam"]
 
 
-class UAddress(BaseModel):
+class AddressParam(TypedDict, total=False):
     """Composite object representing a physical address."""
 
-    administrative_area: Optional[str] = None
+    administrative_area: str
     """State, province, region, or territory."""
 
-    country: Optional[UCountry] = None
+    country: CountryParam
     """Composite object representing a country."""
 
-    dependent_locality: Optional[str] = None
+    dependent_locality: str
     """Neighborhood, borough, district, or city sector."""
 
-    locality: Optional[str] = None
+    locality: str
     """City, town, or village."""
 
-    postal_code: Optional[str] = None
+    postal_code: str
     """Postal code or ZIP code."""
 
-    premise: Optional[str] = None
+    premise: str
     """Street number or building name."""
 
-    sub_administrative_area: Optional[str] = None
+    sub_administrative_area: str
     """County or other secondary governmental division of an administrative area."""
 
-    sub_premise: Optional[str] = None
+    sub_premise: str
     """Apartment, suite, office number, or other secondary unit designator."""
 
-    thoroughfare: Optional[str] = None
+    thoroughfare: str
     """Street name with elements such as street type or direction."""

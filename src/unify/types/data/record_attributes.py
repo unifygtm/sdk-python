@@ -3,8 +3,8 @@
 from typing import Dict, Optional
 from typing_extensions import TypeAlias
 
-from .u_value import UValue
+from .value import Value
 
-__all__ = ["URecordAttributes"]
+__all__ = ["RecordAttributes"]
 
-URecordAttributes: TypeAlias = Dict[str, Optional[UValue]]
+RecordAttributes: TypeAlias = Dict[str, Optional[Value]]

@@ -1,13 +1,14 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Dict, Optional
+from __future__ import annotations
 
-from ..._models import BaseModel
+from typing import Dict
+from typing_extensions import Required, TypedDict
 
-__all__ = ["UReferenceByUpsert"]
+__all__ = ["ReferenceByUpsertParam"]
 
 
-class UReferenceByUpsert(BaseModel):
+class ReferenceByUpsertParam(TypedDict, total=False):
     """Reference to another object record by performing a nested upsert.
 
     At least one of `create`, `create_or_update` or `create_or_update_if_empty`
@@ -32,7 +33,7 @@ class UReferenceByUpsert(BaseModel):
     4. `create_or_update_if_empty`
     """
 
-    match: Dict[str, object]
+    match: Required[Dict[str, object]]
     """The attribute values to match against to find an existing record.
 
     At least one unique attribute must be included to ensure that at most one record
@@ -40,25 +41,25 @@ class UReferenceByUpsert(BaseModel):
     refine the matching criteria.
     """
 
-    create: Optional[Dict[str, object]] = None
+    create: Dict[str, object]
     """The attribute values to use when creating a new record if no match is found."""
 
-    create_or_update: Optional[Dict[str, object]] = None
+    create_or_update: Dict[str, object]
     """The attribute values to apply during both creation and update operations."""
 
-    create_or_update_if_empty: Optional[Dict[str, object]] = None
+    create_or_update_if_empty: Dict[str, object]
     """
     The attribute values to apply during both creation and update-if-empty
     operations.
     """
 
-    update: Optional[Dict[str, object]] = None
+    update: Dict[str, object]
     """
     The attribute values to use when updating an existing record if a match is
     found.
     """
 
-    update_if_empty: Optional[Dict[str, object]] = None
+    update_if_empty: Dict[str, object]
     """
     The attribute values to update when a matching record is found and the existing
     attribute value on the record is `null`.
