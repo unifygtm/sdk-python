@@ -4,10 +4,10 @@ from typing_extensions import Literal
 
 from ..._models import BaseModel
 
-__all__ = ["Country"]
+__all__ = ["UCountry"]
 
 
-class Country(BaseModel):
+class UCountry(BaseModel):
     """Composite object representing a country."""
 
     code: Literal[

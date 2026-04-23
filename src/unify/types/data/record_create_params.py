@@ -5,13 +5,13 @@ from __future__ import annotations
 from typing_extensions import Required, TypedDict
 
 from .validation_mode import ValidationMode
-from .record_attributes_param import RecordAttributesParam
+from .u_record_attributes_param import URecordAttributesParam
 
 __all__ = ["RecordCreateParams"]
 
 
 class RecordCreateParams(TypedDict, total=False):
-    data: Required[RecordAttributesParam]
+    data: Required[URecordAttributesParam]
     """Attribute key-value pairs associated with an object record."""
 
     validation_mode: ValidationMode

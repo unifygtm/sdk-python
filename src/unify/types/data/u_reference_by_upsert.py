@@ -1,14 +1,13 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from __future__ import annotations
+from typing import Dict, Optional
 
-from typing import Dict
-from typing_extensions import Required, TypedDict
+from ..._models import BaseModel
 
-__all__ = ["ReferenceByUpsertParam"]
+__all__ = ["UReferenceByUpsert"]
 
 
-class ReferenceByUpsertParam(TypedDict, total=False):
+class UReferenceByUpsert(BaseModel):
     """Reference to another object record by performing a nested upsert.
 
     At least one of `create`, `create_or_update` or `create_or_update_if_empty`
@@ -33,7 +32,7 @@ class ReferenceByUpsertParam(TypedDict, total=False):
     4. `create_or_update_if_empty`
     """
 
-    match: Required[Dict[str, object]]
+    match: Dict[str, object]
     """The attribute values to match against to find an existing record.
 
     At least one unique attribute must be included to ensure that at most one record
@@ -41,25 +40,25 @@ class ReferenceByUpsertParam(TypedDict, total=False):
     refine the matching criteria.
     """
 
-    create: Dict[str, object]
+    create: Optional[Dict[str, object]] = None
     """The attribute values to use when creating a new record if no match is found."""
 
-    create_or_update: Dict[str, object]
+    create_or_update: Optional[Dict[str, object]] = None
     """The attribute values to apply during both creation and update operations."""
 
-    create_or_update_if_empty: Dict[str, object]
+    create_or_update_if_empty: Optional[Dict[str, object]] = None
     """
     The attribute values to apply during both creation and update-if-empty
     operations.
     """
 
-    update: Dict[str, object]
+    update: Optional[Dict[str, object]] = None
     """
     The attribute values to use when updating an existing record if a match is
     found.
     """
 
-    update_if_empty: Dict[str, object]
+    update_if_empty: Optional[Dict[str, object]] = None
     """
     The attribute values to update when a matching record is found and the existing
     attribute value on the record is `null`.

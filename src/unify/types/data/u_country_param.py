@@ -4,10 +4,10 @@ from __future__ import annotations
 
 from typing_extensions import Literal, Required, TypedDict
 
-__all__ = ["CountryParam"]
+__all__ = ["UCountryParam"]
 
 
-class CountryParam(TypedDict, total=False):
+class UCountryParam(TypedDict, total=False):
     """Composite object representing a country."""
 
     code: Required[
