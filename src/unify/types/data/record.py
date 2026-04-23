@@ -2,20 +2,20 @@
 
 from datetime import datetime
 
-from .u_uuid import UUuid
+from .uuid import Uuid
 from ..._models import BaseModel
-from .u_record_attributes import URecordAttributes
+from .record_attributes import RecordAttributes
 
-__all__ = ["URecord"]
+__all__ = ["Record"]
 
 
-class URecord(BaseModel):
+class Record(BaseModel):
     """Object record with its associated metadata and attribute key-value pairs."""
 
-    id: UUuid
+    id: Uuid
     """String UUIDv4 value."""
 
-    attributes: URecordAttributes
+    attributes: RecordAttributes
     """Attribute key-value pairs associated with an object record."""
 
     created_at: datetime

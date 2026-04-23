@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["USelect"]
+__all__ = ["Uuid"]
 
-USelect: TypeAlias = str
+Uuid: TypeAlias = str

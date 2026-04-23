@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["UText"]
+__all__ = ["Select"]
 
-UText: TypeAlias = str
+Select: TypeAlias = str

@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["UURL"]
+__all__ = ["Boolean"]
 
-UURL: TypeAlias = str
+Boolean: TypeAlias = bool

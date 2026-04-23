@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.1 (2026-04-23)
+
+Full Changelog: [v0.1.0...v0.1.1](https://github.com/unifygtm/sdk-python/compare/v0.1.0...v0.1.1)
+
+### Chores
+
+* **internal:** more robust bootstrap script ([4298584](https://github.com/unifygtm/sdk-python/commit/4298584b2c540e4922857f559549d0239267d622))
+* remove custom code ([8732b35](https://github.com/unifygtm/sdk-python/commit/8732b35d6b69a3633456eaf39bac4b95ac0a4624))
+* update SDK settings ([3e248ae](https://github.com/unifygtm/sdk-python/commit/3e248aef5b390fe4d1efc63fdeb708160918ab0b))
+* update SDK settings ([3749447](https://github.com/unifygtm/sdk-python/commit/3749447ade477291d17a579a7f914346ca86b885))
+* update SDK settings ([c1ec78e](https://github.com/unifygtm/sdk-python/commit/c1ec78ec7bf427da4ebfdcf27f96944316cd5eb9))
+* update SDK settings ([606afb3](https://github.com/unifygtm/sdk-python/commit/606afb30547102c377e9a15e38448a20ab27371b))
+
+
+### Refactors
+
+* **api:** Rename submodules ([06c4b2b](https://github.com/unifygtm/sdk-python/commit/06c4b2b5642c4cae801249d3e58c07a2bd7c6bea))
+
 ## 0.1.0 (2026-04-22)
 
 Full Changelog: [v0.0.1...v0.1.0](https://github.com/unifygtm/sdk-python/compare/v0.0.1...v0.1.0)

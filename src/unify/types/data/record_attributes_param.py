@@ -5,8 +5,8 @@ from __future__ import annotations
 from typing import Dict, Optional
 from typing_extensions import TypeAlias
 
-from .u_value_param import UValueParam
+from .value_param import ValueParam
 
-__all__ = ["URecordAttributesParam"]
+__all__ = ["RecordAttributesParam"]
 
-URecordAttributesParam: TypeAlias = Dict[str, Optional[UValueParam]]
+RecordAttributesParam: TypeAlias = Dict[str, Optional[ValueParam]]
