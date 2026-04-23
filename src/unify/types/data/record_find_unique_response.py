@@ -3,7 +3,7 @@
 from typing import Optional
 from typing_extensions import Literal
 
-from .record import Record
+from .u_record import URecord
 from ..._models import BaseModel
 
 __all__ = ["RecordFindUniqueResponse"]
@@ -12,7 +12,7 @@ __all__ = ["RecordFindUniqueResponse"]
 class RecordFindUniqueResponse(BaseModel):
     """Response for a successful get operation."""
 
-    data: Optional[Record] = None
+    data: Optional[URecord] = None
     """Object record with its associated metadata and attribute key-value pairs."""
 
     status: Literal["success"]

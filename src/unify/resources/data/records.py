@@ -27,8 +27,8 @@ from ...types.data.record_create_response import RecordCreateResponse
 from ...types.data.record_delete_response import RecordDeleteResponse
 from ...types.data.record_update_response import RecordUpdateResponse
 from ...types.data.record_upsert_response import RecordUpsertResponse
-from ...types.data.record_attributes_param import RecordAttributesParam
 from ...types.data.record_retrieve_response import RecordRetrieveResponse
+from ...types.data.u_record_attributes_param import URecordAttributesParam
 from ...types.data.record_find_unique_response import RecordFindUniqueResponse
 
 __all__ = ["RecordsResource", "AsyncRecordsResource"]
@@ -58,7 +58,7 @@ class RecordsResource(SyncAPIResource):
         self,
         object_name: str,
         *,
-        data: RecordAttributesParam,
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -145,7 +145,7 @@ class RecordsResource(SyncAPIResource):
         record_id: str,
         *,
         object_name: str,
-        data: RecordAttributesParam,
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -235,7 +235,7 @@ class RecordsResource(SyncAPIResource):
         self,
         object_name: str,
         *,
-        match: RecordAttributesParam,
+        match: URecordAttributesParam,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -270,13 +270,13 @@ class RecordsResource(SyncAPIResource):
         self,
         object_name: str,
         *,
-        match: RecordAttributesParam,
+        match: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
-        create: RecordAttributesParam | Omit = omit,
-        create_or_update: RecordAttributesParam | Omit = omit,
-        create_or_update_if_empty: RecordAttributesParam | Omit = omit,
-        update: RecordAttributesParam | Omit = omit,
-        update_if_empty: RecordAttributesParam | Omit = omit,
+        create: URecordAttributesParam | Omit = omit,
+        create_or_update: URecordAttributesParam | Omit = omit,
+        create_or_update_if_empty: URecordAttributesParam | Omit = omit,
+        update: URecordAttributesParam | Omit = omit,
+        update_if_empty: URecordAttributesParam | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -366,7 +366,7 @@ class AsyncRecordsResource(AsyncAPIResource):
         self,
         object_name: str,
         *,
-        data: RecordAttributesParam,
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -455,7 +455,7 @@ class AsyncRecordsResource(AsyncAPIResource):
         record_id: str,
         *,
         object_name: str,
-        data: RecordAttributesParam,
+        data: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -547,7 +547,7 @@ class AsyncRecordsResource(AsyncAPIResource):
         self,
         object_name: str,
         *,
-        match: RecordAttributesParam,
+        match: URecordAttributesParam,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -582,13 +582,13 @@ class AsyncRecordsResource(AsyncAPIResource):
         self,
         object_name: str,
         *,
-        match: RecordAttributesParam,
+        match: URecordAttributesParam,
         validation_mode: ValidationMode | Omit = omit,
-        create: RecordAttributesParam | Omit = omit,
-        create_or_update: RecordAttributesParam | Omit = omit,
-        create_or_update_if_empty: RecordAttributesParam | Omit = omit,
-        update: RecordAttributesParam | Omit = omit,
-        update_if_empty: RecordAttributesParam | Omit = omit,
+        create: URecordAttributesParam | Omit = omit,
+        create_or_update: URecordAttributesParam | Omit = omit,
+        create_or_update_if_empty: URecordAttributesParam | Omit = omit,
+        update: URecordAttributesParam | Omit = omit,
+        update_if_empty: URecordAttributesParam | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,

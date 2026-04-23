@@ -4,11 +4,11 @@ from __future__ import annotations
 
 from typing_extensions import Required, TypedDict
 
-from .record_attributes_param import RecordAttributesParam
+from .u_record_attributes_param import URecordAttributesParam
 
 __all__ = ["RecordFindUniqueParams"]
 
 
 class RecordFindUniqueParams(TypedDict, total=False):
-    match: Required[RecordAttributesParam]
+    match: Required[URecordAttributesParam]
     """Attribute key-value pairs associated with an object record."""

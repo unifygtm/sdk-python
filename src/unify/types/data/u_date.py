@@ -2,6 +2,6 @@
 
 from typing_extensions import TypeAlias
 
-__all__ = ["Text"]
+__all__ = ["UDate"]
 
-Text: TypeAlias = str
+UDate: TypeAlias = str

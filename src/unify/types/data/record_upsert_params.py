@@ -5,13 +5,13 @@ from __future__ import annotations
 from typing_extensions import Required, TypedDict
 
 from .validation_mode import ValidationMode
-from .record_attributes_param import RecordAttributesParam
+from .u_record_attributes_param import URecordAttributesParam
 
 __all__ = ["RecordUpsertParams"]
 
 
 class RecordUpsertParams(TypedDict, total=False):
-    match: Required[RecordAttributesParam]
+    match: Required[URecordAttributesParam]
     """Attribute key-value pairs associated with an object record."""
 
     validation_mode: ValidationMode
@@ -26,17 +26,17 @@ class RecordUpsertParams(TypedDict, total=False):
     any required attributes fail validation.
     """
 
-    create: RecordAttributesParam
+    create: URecordAttributesParam
     """Attribute key-value pairs associated with an object record."""
 
-    create_or_update: RecordAttributesParam
+    create_or_update: URecordAttributesParam
     """Attribute key-value pairs associated with an object record."""
 
-    create_or_update_if_empty: RecordAttributesParam
+    create_or_update_if_empty: URecordAttributesParam
     """Attribute key-value pairs associated with an object record."""
 
-    update: RecordAttributesParam
+    update: URecordAttributesParam
     """Attribute key-value pairs associated with an object record."""
 
-    update_if_empty: RecordAttributesParam
+    update_if_empty: URecordAttributesParam
     """Attribute key-value pairs associated with an object record."""

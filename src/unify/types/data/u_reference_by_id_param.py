@@ -1,17 +1,20 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from .uuid import Uuid
-from ..._models import BaseModel
+from __future__ import annotations
 
-__all__ = ["ReferenceByID"]
+from typing_extensions import Required, TypedDict
+
+from .u_uuid import UUuid
+
+__all__ = ["UReferenceByIDParam"]
 
 
-class ReferenceByID(BaseModel):
+class UReferenceByIDParam(TypedDict, total=False):
     """Reference to another object record by ID.
 
     This will find an existing record by its ID, and an error will be returned if
     the record does not exist.
     """
 
-    id: Uuid
+    id: Required[UUuid]
     """String UUIDv4 value."""

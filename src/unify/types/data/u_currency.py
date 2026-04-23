@@ -4,10 +4,10 @@ from typing_extensions import Literal
 
 from ..._models import BaseModel
 
-__all__ = ["Currency"]
+__all__ = ["UCurrency"]
 
 
-class Currency(BaseModel):
+class UCurrency(BaseModel):
     """Composite object representing a currency value."""
 
     code: Literal[
