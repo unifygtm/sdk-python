@@ -5,9 +5,17 @@ from __future__ import annotations
 from typing import Union
 from typing_extensions import TypeAlias
 
+from .u_url import UURL
 from .u_date import UDate
+from .u_text import UText
+from .u_uuid import UUuid
+from .u_email import UEmail
+from .u_select import USelect
 from .u_boolean import UBoolean
 from .u_decimal import UDecimal
+from .u_integer import UInteger
+from .u_datetime import UDatetime
+from .u_phone_number import UPhoneNumber
 from .u_address_param import UAddressParam
 from .u_country_param import UCountryParam
 from .u_currency_param import UCurrencyParam
@@ -24,9 +32,17 @@ UValueParam: TypeAlias = Union[
     UCountryParam,
     UCurrencyParam,
     UDate,
+    UDatetime,
     UDecimal,
+    UEmail,
+    UInteger,
     UMultiselectParam,
+    UPhoneNumber,
     UReferenceByIDParam,
     UReferenceByMatchParam,
     UReferenceByUpsertParam,
+    USelect,
+    UText,
+    UURL,
+    UUuid,
 ]
