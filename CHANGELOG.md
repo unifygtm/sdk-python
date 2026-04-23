@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 (2026-04-23)
+
+Full Changelog: [v0.1.1...v0.1.2](https://github.com/unifygtm/sdk-python/compare/v0.1.1...v0.1.2)
+
+### Refactors
+
+* **api:** Revert submodules ([ba8ed7b](https://github.com/unifygtm/sdk-python/commit/ba8ed7b50eb09cac0a7c3007baa56ed5e42a3901))
+
 ## 0.1.1 (2026-04-23)
 
 Full Changelog: [v0.1.0...v0.1.1](https://github.com/unifygtm/sdk-python/compare/v0.1.0...v0.1.1)
