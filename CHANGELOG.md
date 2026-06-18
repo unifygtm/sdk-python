@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.2.0 (2026-06-18)
+
+Full Changelog: [v0.1.3...v0.2.0](https://github.com/unifygtm/sdk-python/compare/v0.1.3...v0.2.0)
+
+### Features
+
+* **internal/types:** support eagerly validating pydantic iterators ([0207aab](https://github.com/unifygtm/sdk-python/commit/0207aabcc10aeafaace76cbf06db2c839b6ce39a))
+* support setting headers via env ([182af02](https://github.com/unifygtm/sdk-python/commit/182af022f0bffec9a9862ce7a8f02d9a46f94458))
+
+
+### Bug Fixes
+
+* **auth:** prioritize first auth header ([160a1d4](https://github.com/unifygtm/sdk-python/commit/160a1d4e92846bcd347c512fa65bcd0c22e64577))
+* **client:** add missing f-string prefix in file type error message ([6c71e19](https://github.com/unifygtm/sdk-python/commit/6c71e19a379f23b7861257be0e21230d665f87ab))
+* use correct field name format for multipart file arrays ([2c9207c](https://github.com/unifygtm/sdk-python/commit/2c9207cd0a8f794532e0a13ba1603d1dbf7af6b4))
+
+
+### Chores
+
+* **internal:** reformat pyproject.toml ([063208b](https://github.com/unifygtm/sdk-python/commit/063208b4ffec5d9fce42cafc94bf39488db61ca1))
+
 ## 0.1.3 (2026-04-23)
 
 Full Changelog: [v0.1.2...v0.1.3](https://github.com/unifygtm/sdk-python/compare/v0.1.2...v0.1.3)
